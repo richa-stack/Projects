@@ -1,6 +1,76 @@
-.todo-app-conatiner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+        background-color: aliceblue;
+        .todo-app-conatiner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 200px;
+            border-left: 2px;
+            border-right: 2px;
+            border-top: 2px;
+            border-bottom: none;
+            border-style: solid;
+            border-color: green;
+            background-color:azure;
+
+        .header {
+            color:blueviolet;
+        }
+
+        .add-item-container {
+            .item {
+                height: 35px;
+                font-size: 20px;
+                line-height: normal;
+                color: brown;
+            }
+            .add-item {
+                background-color: bisque;
+                padding: 12px;
+                margin: 10px;
+                border: 2px solid green;
+                width: 200px;
+                color: blueviolet;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .your-list {
+                color: blueviolet;
+            }
+        }
+    }
+    .unit {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 200px;
+        border: 2px solid green;
+
+        span {
+            font-size: 30px;
+            line-height: normal;
+            color: brown;
+            font-weight: 700;
+            font-family: cursive;
+            background: chartreuse;
+        }
+
+        button {
+            width: 400px;
+            background-color: bisque;
+            padding: 12px;
+            margin: 10px;
+            border: 2px solid green;
+            color: blueviolet;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+    }
 }
+
+
+
+
