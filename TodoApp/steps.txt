@@ -1,0 +1,23 @@
+Html:
+Todolist - header
+Input type text
+Add item button
+Your List
+
+JS:
+Enter value in input field eg APPLE
+CLICK on ADDITEMBTN
+On click of additembtn
+	If input fireld is empty -> do nothing
+	Else 
+	In a container div
+Added item should be displayed+Edit buttonShow+Delete Button Show
+		Edit button
+			On click of edit button -> alertbox with prefilled value; HEADER TEXT:Edit item; ok and cancel button -> edit the prefilled value -> CLICK OK it gets saved ; Click Cancel – it is not saved
+
+	Delete button
+		On click of delete button, array se delte ho jaega
+
+
+
+

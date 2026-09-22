@@ -1,0 +1,135 @@
+# JavaScript Coding Challenge: Todo Application
+
+## Problem Statement
+
+Build a **Todo Application** using **HTML, CSS, and JavaScript** that allows users to add, edit, and delete todo items dynamically.
+
+The application should provide a simple user interface where users can enter a task, add it to the todo list, modify an existing task, or remove it from the list.
+
+## Requirements
+
+### 1. Add Todo Item
+
+* Provide an input field for entering a todo item.
+* Provide an **Add Item** button.
+* When the user clicks **Add Item**, the entered task should be added to the todo list.
+* The newly added item should be displayed immediately without refreshing the page.
+* Clear the input field after successfully adding an item.
+
+### 2. Display Todo Items
+
+* Display all added todo items in a list.
+* Each todo item should have:
+
+  * The todo text
+  * An **Edit** button
+  * A **Delete** button
+
+### 3. Edit Todo Item
+
+* When the user clicks the **Edit** button, display an input interface such as a prompt or inline input field.
+* Pre-populate it with the existing todo text.
+* Allow the user to modify the text and save the changes.
+* The updated todo item should be reflected immediately in the list.
+
+### 4. Delete Todo Item
+
+* When the user clicks the **Delete** button, remove the corresponding todo item from the list.
+* The remaining items should continue to be displayed correctly.
+
+### 5. Dynamic UI Updates
+
+* The application should update the DOM dynamically whenever an item is:
+
+  * Added
+  * Edited
+  * Deleted
+* The page should not require a reload for any of these operations.
+
+## Expected Behavior
+
+Given an initially empty todo list:
+
+**Step 1 – Add an item**
+
+User enters:
+
+```text
+Learn JavaScript
+```
+
+and clicks **Add Item**.
+
+The application should display:
+
+```text
+Learn JavaScript    [Edit] [Delete]
+```
+
+**Step 2 – Add another item**
+
+User enters:
+
+```text
+Practice React
+```
+
+The list should become:
+
+```text
+Learn JavaScript    [Edit] [Delete]
+Practice React      [Edit] [Delete]
+```
+
+**Step 3 – Edit an item**
+
+User clicks **Edit** for `Learn JavaScript` and changes it to:
+
+```text
+Learn Advanced JavaScript
+```
+
+The list should become:
+
+```text
+Learn Advanced JavaScript    [Edit] [Delete]
+Practice React               [Edit] [Delete]
+```
+
+**Step 4 – Delete an item**
+
+User clicks **Delete** for `Practice React`.
+
+The list should become:
+
+```text
+Learn Advanced JavaScript    [Edit] [Delete]
+```
+
+## Sample Input / Output
+
+| Action | Input                                            | Expected Output                                                        |
+| ------ | ------------------------------------------------ | ---------------------------------------------------------------------- |
+| Add    | `Learn JavaScript`                               | `Learn JavaScript [Edit] [Delete]`                                     |
+| Add    | `Practice React`                                 | `Learn JavaScript [Edit] [Delete]`<br>`Practice React [Edit] [Delete]` |
+| Edit   | `Learn JavaScript` → `Learn Advanced JavaScript` | `Learn Advanced JavaScript [Edit] [Delete]`                            |
+| Delete | `Practice React`                                 | `Learn Advanced JavaScript [Edit] [Delete]`                            |
+
+## Technical Requirements
+
+* Use **JavaScript DOM manipulation** to create and update todo items.
+* Maintain the todo items using a JavaScript data structure such as an **Array**.
+* Use appropriate DOM event handling for **Add**, **Edit**, and **Delete** operations.
+* Avoid page refreshes during any operation.
+* Ensure each Edit/Delete action affects only the selected todo item.
+
+## Bonus Requirements
+
+Candidates may optionally implement:
+
+* Prevent adding empty todo items.
+* Display a confirmation before deleting an item.
+* Allow pressing **Enter** to add a todo.
+* Persist todo items using **localStorage**.
+* Add a **Complete/Incomplete** status for each todo.
+* Add filtering options such as **All, Active, and Completed**.
